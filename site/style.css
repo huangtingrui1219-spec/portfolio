@@ -101,7 +101,7 @@ nav.mainnav a:nth-child(2) { --nav-c: var(--pear); }
 nav.mainnav a:nth-child(3) { --nav-c: var(--orange); }
 
 /* ============ 首屏即作品 ============ */
-.works-open { padding: 54px 0 8px; }
+.works-open { padding-top: 54px; padding-bottom: 8px; }
 .works-open .hi {
   font-family: var(--round);
   font-size: clamp(20px, 2.6vw, 26px);
@@ -114,7 +114,7 @@ nav.mainnav a:nth-child(3) { --nav-c: var(--orange); }
 }
 
 /* ============ 作品长卷 ============ */
-.feed { padding: 30px 0 40px; display: flex; flex-direction: column; gap: 90px; }
+.feed { padding-top: 30px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 90px; }
 
 .work {
   display: grid; grid-template-columns: 1.5fr 1fr; gap: 48px; align-items: center;
@@ -233,7 +233,7 @@ footer.foot {
 .foot a { color: var(--graphite); }
 
 /* ============ 关于我页面 ============ */
-.about-hero { padding: 80px 0 30px; text-align: center; }
+.about-hero { padding-top: 80px; padding-bottom: 30px; text-align: center; }
 
 /* 头像框：等大王画的小人 */
 .avatar-slot {
@@ -266,7 +266,7 @@ footer.foot {
 .about-doodleline { margin: 26px auto 0; display: block; }
 
 /* 技能在下面 */
-.skills { padding: 60px 0 80px; }
+.skills { padding-top: 60px; padding-bottom: 80px; }
 .skills h2 {
   font-family: var(--round); text-align: center;
   font-size: 26px; letter-spacing: .3em; margin-bottom: 40px;
@@ -339,7 +339,7 @@ body.proj header.top { background: rgba(255,255,255,.9); border-color: #EFEFEA; 
 /* 手绘十字星 */
 .blobs svg { position: absolute; animation: drift var(--dur, 20s) ease-in-out infinite alternate; }
 
-.proj-hero { padding: 76px 0 44px; }
+.proj-hero { padding-top: 76px; padding-bottom: 44px; }
 .backlink {
   display: inline-flex; align-items: center; gap: 10px;
   color: var(--graphite); text-decoration: none; font-size: 16px; font-weight: 700;
@@ -366,7 +366,7 @@ body.proj header.top { background: rgba(255,255,255,.9); border-color: #EFEFEA; 
 .plates figure.show { opacity: 1; transform: none; }
 .plates img { width: 100%; display: block; }
 
-.proj-next { text-align: center; padding: 10px 0 90px; }
+.proj-next { text-align: center; padding-top: 10px; padding-bottom: 90px; }
 .proj-next a {
   font-family: var(--round);
   color: var(--ink); text-decoration: none; font-weight: 800; font-size: 21px;
