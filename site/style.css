@@ -396,3 +396,16 @@ body.proj header.top { background: rgba(255,255,255,.9); border-color: #EFEFEA; 
   .work, .plates figure { opacity: 1 !important; transform: none !important; }
   #intro { display: none; }
 }
+
+/* ============ 图片防随手保存 ============
+   挡掉：手机长按弹出的"存储图像"、电脑右键"图片另存为"、拖拽到桌面。
+   挡不掉：截屏、查看源代码、直接访问图片地址——网页图片没有真正的防下载，
+   这里只是把"顺手一存"变成"得懂点技术"。 */
+img {
+  pointer-events: none;          /* 长按/右键落不到图片上，菜单里就没有保存项 */
+  -webkit-touch-callout: none;   /* iOS 长按菜单 */
+  -webkit-user-drag: none;       /* 拖到桌面 */
+  -webkit-user-select: none;
+  user-select: none;
+}
+.work, .plates figure { -webkit-touch-callout: none; }
