@@ -76,7 +76,6 @@ header.top {
   background: rgba(245,245,245,.9);
   backdrop-filter: blur(12px);
   border-bottom: 2px solid var(--bg-line);
-  box-shadow: 0 8px 20px rgba(43,43,40,.06);
 }
 .top-inner {
   max-width: var(--maxw); margin: 0 auto; padding: 20px 32px;
@@ -332,9 +331,6 @@ body.proj header.top {
   background: var(--t);
   /* 分界用同色深一档，而不是黑线——黑线会从彩条里跳出来 */
   border-bottom: 2px solid rgba(0,0,0,.18);
-  /* 横条是压在页面最上层的，给一点同色系投影让它浮起来 */
-  box-shadow: 0 8px 20px rgba(43,43,40,.10);
-  box-shadow: 0 8px 22px color-mix(in srgb, var(--t) 34%, transparent);
   backdrop-filter: none;
 }
 body.proj header.top .brand,
