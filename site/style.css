@@ -141,6 +141,14 @@ nav.mainnav a:nth-child(3) { --nav-c: var(--orange); }
 }
 .work .shot img {
   width: 100%; display: block; border-radius: 20px;
+  /* 首页封面统一 16:9：后两个项目原图是A4横版(1.40)，比前三个厚一截。
+     这里只裁首页缩略图，项目页里的大图不受影响，仍是完整A4。 */
+  aspect-ratio: 16 / 9; object-fit: cover;
+}
+/* 界面设计封面：上方是装饰圆圈、右下角有整只手机，所以裁切位置往下偏，
+   多切上面、少切下面，保住手机不被削掉。绘本设计用默认居中即可。 */
+.work .shot img[src*="jiemian"] {
+  object-position: center 75%;
   box-shadow: 0 14px 34px rgba(43,43,40,.13);
   transition: transform .45s cubic-bezier(.4,.1,.3,1.4), box-shadow .45s;
 }
