@@ -301,17 +301,19 @@ footer.foot {
 .about-doodleline { margin: 26px auto 0; display: block; }
 
 /* 技能在下面 */
-/* 履历：教育背景 + 奖项。标签样式和项目页的类型/主题色/产出同源 */
-.resume {
-  display: flex; gap: 64px; flex-wrap: wrap;
-  padding-top: 10px; padding-bottom: 10px;
-  max-width: 900px; margin: 0 auto;
+/* 履历：整页是居中轴线，履历也跟着居中、纵向堆叠。
+   （原来是左对齐两栏，奖项内容一多就把教育背景挤到角落，跟全页节奏也对不上） */
+.resume { padding-top: 46px; padding-bottom: 10px; text-align: center; }
+.resume h2 {
+  font-family: var(--round); font-size: 26px;
+  letter-spacing: .3em; margin-bottom: 34px;
 }
-.resume span {
+.resume-row { margin-bottom: 26px; }
+.resume-row span {
   display: block; font-size: 13px; letter-spacing: .25em;
   color: var(--graphite); margin-bottom: 8px;
 }
-.resume b { display: block; font-size: 16px; font-weight: 800; line-height: 1.9; }
+.resume-row b { display: block; font-size: 16px; font-weight: 700; line-height: 1.95; }
 
 /* 彩蛋：页脚一个小点，点开才有 */
 .egg { margin-top: 18px; }
@@ -329,7 +331,7 @@ footer.foot {
   color: var(--graphite); letter-spacing: .06em;
 }
 
-.skills { padding-top: 60px; padding-bottom: 80px; }
+.skills { padding-top: 44px; padding-bottom: 80px; }
 .skills h2 {
   font-family: var(--round); text-align: center;
   font-size: 26px; letter-spacing: .3em; margin-bottom: 40px;
