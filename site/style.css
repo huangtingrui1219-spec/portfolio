@@ -403,11 +403,11 @@ body.proj header.top nav.mainnav a:hover { color: #fff; }
   font-size: clamp(36px, 6vw, 60px); font-weight: 900; letter-spacing: .06em;
   color: var(--t);
 }
-/* 导语：项目名和正文之间缺一档，所以把它提到21px，
-   下面的标签值和理念正文留在16–17px，层级才走得下来。 */
+/* 副标题：只有一句话，紧贴项目名，字号跟正文同级。
+   （一句话的东西不该占最大字号——那是给有实质内容的导语用的） */
 .proj-hero .desc {
-  margin-top: 20px; max-width: 680px; color: #3F3F3A;
-  font-size: 21px; line-height: 1.85;
+  margin-top: 6px; max-width: 680px;
+  color: var(--graphite); font-size: 17px; line-height: 1.7;
 }
 .proj-info { display: flex; gap: 46px; margin-top: 30px; flex-wrap: wrap; }
 .proj-info div span { display: block; font-size: 13px; letter-spacing: .25em; color: var(--graphite); }
