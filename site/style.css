@@ -16,7 +16,10 @@
   --purple: #9179C9;      /* 本科 · 界面 */
   --yellow: #E8B33D;      /* 本科 · 绘本 */
   --maxw: 1200px;
-  --round: "Yuanti SC", "YouYuan", "幼圆", "PingFang SC", "Microsoft YaHei", sans-serif;
+  /* 全站统一苹方系。原来标题用的是圆体栈（Yuanti SC / 幼圆），
+     那几款字体各系统装的不一样，尤其数字会掉到别的字体上，所以撤掉。 */
+  --round: "PingFang SC", "HarmonyOS Sans SC", "MiSans", "Microsoft YaHei",
+           "Noto Sans SC", sans-serif;
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -391,10 +394,15 @@ body.proj header.top nav.mainnav a:hover { color: #fff; }
   font-size: clamp(36px, 6vw, 60px); font-weight: 900; letter-spacing: .06em;
   color: var(--t);
 }
-.proj-hero .desc { margin-top: 20px; max-width: 640px; color: #4A4A45; font-size: 17.5px; }
+/* 导语：项目名和正文之间缺一档，所以把它提到21px，
+   下面的标签值和理念正文留在16–17px，层级才走得下来。 */
+.proj-hero .desc {
+  margin-top: 20px; max-width: 680px; color: #3F3F3A;
+  font-size: 21px; line-height: 1.85;
+}
 .proj-info { display: flex; gap: 46px; margin-top: 30px; flex-wrap: wrap; }
 .proj-info div span { display: block; font-size: 13px; letter-spacing: .25em; color: var(--graphite); }
-.proj-info div b { font-size: 17px; font-weight: 800; }
+.proj-info div b { font-size: 16px; font-weight: 800; }
 
 /* 设计理念：放在作品长图之前，让人先知道要看什么再去看图。
    小标题沿用 .proj-info 那套标签样式（13px + 字距），保持同一套语言。 */
