@@ -396,6 +396,19 @@ body.proj header.top nav.mainnav a:hover { color: #fff; }
 .proj-info div span { display: block; font-size: 13px; letter-spacing: .25em; color: var(--graphite); }
 .proj-info div b { font-size: 17px; font-weight: 800; }
 
+/* 设计理念：放在作品长图之前，让人先知道要看什么再去看图。
+   小标题沿用 .proj-info 那套标签样式（13px + 字距），保持同一套语言。 */
+.concept { padding-bottom: 6px; }
+.concept h2 {
+  font-family: var(--round);
+  font-size: 13px; font-weight: 800; letter-spacing: .25em;
+  color: var(--t); margin-bottom: 12px;
+}
+.concept p {
+  max-width: 760px;
+  color: #4A4A45; font-size: 17px; line-height: 2;
+}
+
 .plates { padding-bottom: 70px; display: flex; flex-direction: column; gap: 34px; }
 .plates figure {
   margin: 0; border-radius: 18px; overflow: hidden;
