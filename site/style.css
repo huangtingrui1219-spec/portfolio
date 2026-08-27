@@ -22,6 +22,15 @@
            "Noto Sans SC", sans-serif;
 }
 
+/* 圆体数字（M PLUS Rounded 1c，SIL 开源字体，仅截取 0–9，1.4KB）
+   只用在项目编号上，让数字圆润饱满；中文一律走苹方。 */
+@font-face {
+  font-family: "RoundNum";
+  src: url("fonts/rounded-num.woff2") format("woff2");
+  font-weight: 800; font-style: normal; font-display: swap;
+  unicode-range: U+0030-0039;
+}
+
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 
@@ -175,8 +184,8 @@ nav.mainnav a:nth-child(3) { --nav-c: var(--orange); }
 .work .info h3::before {
   counter-increment: workno;
   content: counter(workno, decimal-leading-zero);
-  display: block; font-family: var(--round);
-  font-size: clamp(26px, 2.9vw, 38px); font-weight: 800; line-height: 1;
+  display: block; font-family: "RoundNum", var(--round);
+  font-size: clamp(30px, 3.3vw, 44px); font-weight: 800; line-height: 1;
   color: var(--c); letter-spacing: .04em; margin-bottom: 2px;
 }
 .work .info h3 {
@@ -379,8 +388,8 @@ body.proj header.top nav.mainnav a:hover { color: #fff; }
 /* 项目页文字头：编号用该项目主题色，与首页的编号一一对应 */
 .proj-hero h1::before {
   content: var(--n, "");
-  display: block; font-family: var(--round);
-  font-size: clamp(28px, 3.6vw, 44px); font-weight: 800; line-height: 1;
+  display: block; font-family: "RoundNum", var(--round);
+  font-size: clamp(32px, 4.2vw, 52px); font-weight: 800; line-height: 1;
   color: var(--t); letter-spacing: .04em; margin-bottom: 2px;
 }
 .backlink {
@@ -413,8 +422,8 @@ body.proj header.top nav.mainnav a:hover { color: #fff; }
   color: var(--t); margin-bottom: 12px;
 }
 .concept p {
-  max-width: 760px;
-  color: #4A4A45; font-size: 17px; line-height: 2;
+  max-width: 760px; text-indent: 2em;
+  color: var(--ink); font-size: 17px; line-height: 1.8;
 }
 
 .plates { padding-bottom: 70px; display: flex; flex-direction: column; gap: 34px; }
