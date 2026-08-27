@@ -173,19 +173,24 @@ nav.mainnav a:nth-child(3) { --nav-c: var(--orange); }
   counter-increment: workno;
   content: counter(workno, decimal-leading-zero);
   display: block; font-family: var(--round);
-  font-size: clamp(34px, 4.4vw, 56px); font-weight: 800; line-height: 1;
-  color: var(--c); letter-spacing: .04em; margin-bottom: 4px;
+  font-size: clamp(26px, 2.9vw, 38px); font-weight: 800; line-height: 1;
+  color: var(--c); letter-spacing: .04em; margin-bottom: 2px;
 }
 .work .info h3 {
   font-family: var(--round);
-  font-size: clamp(26px, 3.4vw, 38px); font-weight: 800; letter-spacing: .06em;
+  font-size: clamp(30px, 3.9vw, 44px); font-weight: 800; letter-spacing: .06em;
   display: inline-block; position: relative; transition: color .3s;
 }
 .work:hover .info h3 { color: var(--c); }
 .work .info .tagline {
   display: flex; align-items: center; gap: 10px;
-  margin-top: 8px; color: var(--graphite); font-size: 16px; letter-spacing: .1em;
+  margin-top: 8px; color: var(--ink); font-size: 16px; font-weight: 700; letter-spacing: .06em;
 }
+.work .info .brief {
+  margin-top: 6px; max-width: 21em;
+  color: var(--graphite); font-size: 15.5px; line-height: 1.7;
+}
+.work:nth-child(even) .info .brief { margin-left: auto; }
 .work .info .chip {
   display: inline-block; margin-top: 18px;
   font-size: 14px; font-weight: 700; letter-spacing: .2em;
@@ -372,7 +377,7 @@ body.proj header.top nav.mainnav a:hover { color: #fff; }
 .proj-hero h1::before {
   content: var(--n, "");
   display: block; font-family: var(--round);
-  font-size: clamp(44px, 6vw, 76px); font-weight: 800; line-height: 1;
+  font-size: clamp(28px, 3.6vw, 44px); font-weight: 800; line-height: 1;
   color: var(--t); letter-spacing: .04em; margin-bottom: 2px;
 }
 .backlink {
