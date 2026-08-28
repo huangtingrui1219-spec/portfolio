@@ -314,6 +314,13 @@ footer.foot {
   color: var(--graphite); margin-bottom: 8px;
 }
 .resume-row b { display: block; font-size: 16px; font-weight: 700; line-height: 1.95; }
+/* 实践经历：条目名下面挂一行说明，说明比条目名浅一档、小一档 */
+.resume-row i {
+  display: block; font-style: normal;
+  max-width: 660px; margin: 2px auto 18px;
+  font-size: 15px; line-height: 1.8; color: var(--graphite);
+}
+.resume-row i:last-child { margin-bottom: 0; }
 
 /* 彩蛋：页脚一个小点，点开才有 */
 .egg { margin-top: 18px; }
